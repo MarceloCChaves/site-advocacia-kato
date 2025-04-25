@@ -1,7 +1,10 @@
 :root {
   --primary: #152c4b;
+  --secondary: #333333;
+  --success: #126b33;
+  --danger: #d15454;
   --white: #f0f4f8;
-  --whatsapp: #25D366;
+  --whatsapp: #075e54;
 }
 
 * {
@@ -82,14 +85,14 @@ header p {
 
 .informativo-texto h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
 .informativo-texto p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--secondary);
 }
 
 .informativo-texto ul {
@@ -101,11 +104,11 @@ header p {
 .informativo-texto ul li {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: var(--primary);
 }
 
 .informativo-texto ul li i {
-  color: #25D366;
+  color: var(--success);
   margin-right: 0.5rem;
 }
 
@@ -184,7 +187,7 @@ header p {
 .coluna-esquerda h2,
 .coluna-direita h2 {
   font-size: 1.8rem;
-  color: #152c4b;
+  color: var(--primary);
   margin-bottom: 1.5rem;
 }
 
@@ -201,14 +204,14 @@ header p {
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: #333;
+  color: var(--secondary);
   font-size: 1.1rem;
 }
 
 .coluna-esquerda ul li span {
-  background: #25D366;
-  color: white;
-  font-weight: bold;
+  background: var(--success);
+  color: var(--white);
+  font-weight: 700;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -230,8 +233,36 @@ header p {
 .recuperacao p,
 .urgencia p {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--secondary);
   line-height: 1.6;
+}
+
+.urgencia ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.urgencia ul li {
+  margin-bottom: 12px;
+  font-size: 1.05em;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.urgencia ul li span {
+  background: var(--danger);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 
@@ -261,6 +292,62 @@ header p {
   margin-bottom: 2rem;
 }
 
+.formulario-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.mapa {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: 450px;
+  border: 0;
+}
+
+.form-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-container textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+ul.lista-estrategias {
+  list-style: decimal;
+  margin: 20px 0;
+}
+
+ul.lista-estrategias li {
+  margin-bottom: 12px;
+  font-size: 1.05em;
+  color: var(--white);
+}
+
+
 .whatsapp-btn {
   background: var(--whatsapp);
   color: var(--white);
@@ -272,20 +359,31 @@ header p {
   cursor: pointer;
   margin-top: 1.5rem;
   transition: filter 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
   text-decoration: none;
 }
 
-.whatsapp-btn:hover {
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: filter 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover, .btn-primary:hover {
   filter: brightness(90%);
 }
 
 
 .footer {
-  background-color: var(--white);
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--white);
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -300,12 +398,8 @@ header p {
   gap: 1rem;
 }
 
-.footer-logo img {
-  max-width: 150px;
-}
-
 .footer-info p {
-  margin: 0.3rem 0;
+  margin: 1rem 0;
   font-size: 0.95rem;
 }
 
@@ -313,7 +407,7 @@ header p {
   .text-content {
     text-align: center;
   }
-  .sobre, .informativo  {
+  .sobre, .informativo, .formulario-contato, .cta-final  {
     height: 100%;
   }
   .adv-img {
