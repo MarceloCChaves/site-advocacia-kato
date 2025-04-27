@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background: url("./assets/background.png");
+  background: url("../assets/background.png");
   background-position: center right;
   background-size: cover;
   color: var(--white);
@@ -300,6 +300,7 @@ header p {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 2rem;
+  height: 100vh;
 }
 
 .form-content {
@@ -448,7 +449,7 @@ ul.lista-estrategias li {
   .text-content {
     text-align: center;
   }
-  .sobre, .informativo, .formulario-contato, .cta-final  {
+  .sobre, .informativo, .formulario-contato, .cta-final, .form-contact  {
     height: 100%;
   }
   .adv-img {
