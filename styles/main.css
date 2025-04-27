@@ -4,6 +4,7 @@
   --light-success: #d4edda;
   --success: #126b33;
   --danger: #d15454;
+  --warning: 	#f0ad4e;
   --white: #f0f4f8;
   --whatsapp: #075e54;
 }
@@ -25,12 +26,12 @@ header {
   background-size: cover;
   color: var(--white);
   text-align: center;
+  padding: 0 2rem;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-around;
@@ -361,27 +362,32 @@ header p {
   height: 120px;
 }
 
-#mensagem-sucesso{
-  background-color: var(--light-success);
-  color: var(--success);
-  border: 1px solid var(--light-success);
-  padding: 15px 20px;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-size: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
 ul.lista-estrategias {
   list-style: none;
   margin: 20px 0;
 }
 
 ul.lista-estrategias li {
-  margin-bottom: 12px;
-  font-size: 1.05em;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   color: var(--white);
+  font-size: 1.1rem;
+}
+
+.lista-estrategias li span {
+  background: var(--warning);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 
@@ -446,17 +452,11 @@ ul.lista-estrategias li {
 }
 
 @media (max-width: 1024px) {
-  .text-content {
-    text-align: center;
-  }
   .sobre, .informativo, .formulario-contato, .cta-final, .form-contact  {
     height: 100%;
   }
   .adv-img {
     display: none;
-  }
-  .header-content {
-    justify-content: center;
   }
   .informativo-content {
     flex-direction: column;
