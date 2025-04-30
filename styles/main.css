@@ -452,7 +452,10 @@ ul.lista-estrategias li {
 }
 
 @media (max-width: 1024px) {
-  .sobre, .informativo, .formulario-contato, .cta-final, .form-contact  {
+  header {
+    padding: 3rem 2rem;
+  }
+  .header-content, .sobre, .informativo, .formulario-contato, .cta-final, .form-contact  {
     height: 100%;
   }
   .adv-img {
