@@ -40,6 +40,7 @@ header {
 
 .text-content img {
   margin-bottom: 50px;
+  max-width: 100%;
 }
 
 .text-content p {
@@ -149,6 +150,7 @@ header p {
   width: 300px;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   border: 2px solid var(--white);
+  max-width: 100%;
 }
 
 .sobre-texto {
@@ -335,8 +337,7 @@ header p {
 
 .form-container {
   flex: 1;
-  min-width: 300px;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .form-container h2 {
@@ -448,6 +449,10 @@ ul.lista-estrategias li {
   gap: 1rem;
 }
 
+.footer-info img {
+  max-width: 100%;
+}
+
 .footer-info p {
   margin: 1rem 0;
   font-size: 0.95rem;
@@ -467,10 +472,6 @@ ul.lista-estrategias li {
   }
   .adv-img {
     display: none;
-  }
-  .text-content img  {
-    width: auto;
-    height: auto;
   }
   .informativo-content {
     flex-direction: column;
