@@ -9,13 +9,6 @@
   --whatsapp: #075e54;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background: var(--white);
 }
@@ -474,6 +467,10 @@ ul.lista-estrategias li {
   }
   .adv-img {
     display: none;
+  }
+  .text-content img  {
+    width: auto;
+    height: auto;
   }
   .informativo-content {
     flex-direction: column;
