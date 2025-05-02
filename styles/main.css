@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background: url("../assets/background.png");
+  background: url("../assets/background.webp");
   background-position: center right;
   background-size: cover;
   color: var(--white);
@@ -47,6 +47,10 @@ header {
 
 .text-content img {
   margin-bottom: 50px;
+}
+
+.text-content p {
+  margin-bottom: 1rem;
 }
 
 .adv-img {
@@ -392,22 +396,27 @@ ul.lista-estrategias li {
 
 
 .whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
   background: var(--whatsapp);
-  color: var(--white);
+  color: white;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
   border-radius: 6px;
-  cursor: pointer;
-  margin-top: 1rem;
-  transition: filter 0.3s ease;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: filter 0.3s ease;
 }
 
 .whatsapp-btn a {
   text-decoration: none;
   color: var(--white);
+}
+
+.whatsapp-btn:hover {
+  filter: brightness(90%);
 }
 
 .btn-primary {
@@ -449,6 +458,11 @@ ul.lista-estrategias li {
 .footer-info p {
   margin: 1rem 0;
   font-size: 0.95rem;
+}
+
+.footer-info p a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
