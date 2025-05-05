@@ -35,7 +35,6 @@ header {
 .text-content {
   flex: 1;
   min-width: 250px;
-  text-align: left;
 }
 
 .text-content img {
@@ -469,6 +468,11 @@ ul.lista-estrategias li {
   }
   .header-content, .sobre, .informativo, .formulario-contato, .cta-final, .form-contact  {
     height: 100%;
+  }
+  .footer-info img, .text-content img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 25px;
   }
   .adv-img {
     display: none;
