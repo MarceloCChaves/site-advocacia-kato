@@ -35,6 +35,7 @@ header {
 .text-content {
   flex: 1;
   min-width: 250px;
+  text-align: left;
 }
 
 .text-content img {
@@ -473,6 +474,9 @@ ul.lista-estrategias li {
     width: 200px;
     height: auto;
     margin-bottom: 25px;
+  }
+  .text-content {
+    text-align: center;
   }
   .adv-img {
     display: none;
