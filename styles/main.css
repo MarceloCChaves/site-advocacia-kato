@@ -479,7 +479,7 @@ ul.lista-estrategias li {
     text-align: center;
   }
   .adv-img {
-    display: none;
+    height: 100%;
   }
   .informativo-content {
     flex-direction: column;
