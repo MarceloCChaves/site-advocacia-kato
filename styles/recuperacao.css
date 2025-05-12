@@ -232,6 +232,7 @@ header p {
 
 .process-step {
   margin-bottom: 25px;
+  text-align: left;
 }
 
 .process-step p:first-child {
@@ -244,13 +245,6 @@ header p {
   height: 300px;
   border-radius: 20px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-}
-
-@media (max-width: 768px) {
-  .process-section {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 .form-contact {
@@ -370,18 +364,14 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 0;
   gap: 2rem;
   width: 1200px;
   max-width: 90%;
-  margin: auto;
-}
-
-@media (min-width: 768px) {
-  .contact-block {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  margin: 0 auto;
 }
 
 .contact-text {
